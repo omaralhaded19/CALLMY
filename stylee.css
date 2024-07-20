@@ -1,0 +1,175 @@
+/*
+* created by Hazem othman *
+* contact with me at fb : https://www.facebook.com/hazem.othman.165 *
+*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Tajawal', sans-serif;
+}
+a,button {
+	font-family: 'Tajawal', sans-serif;
+	text-decoration: none;
+}
+
+.presentation {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction {
+	direction: rtl;
+	flex: 1;
+	text-align: right;
+	-ms-flex: 1;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+.text-info{
+	color: #00cfff;
+}
+.text-danger{
+	color: tomato;
+}
+.contact-info{
+	padding: 5px 0px;
+}
+.contact-info a{
+	text-decoration: none;
+	display: flex;
+}
+.contact-info img{
+	width: 60px;
+	height: 60px;
+}
+.contact-info label{
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 17px;
+	padding-right: 10px;
+}
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-select {
+	border: 2px solid #c36cbb;
+	background: transparent;
+	color: #c36cbb;
+	padding: 9px 23px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.cta-add {
+	background: #c36cbb;
+	padding: 10px 23px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+}
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+	-ms-flex: 1;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	-webkit-width: 100%;
+	-moz-width:100%;
+}
+.big-circle {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: fixed;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.small-circle {
+	position: fixed;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+footer{
+	text-align: center;
+	margin-top: 10px;
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contact-info a{
+		display: inline-flex;
+		margin: 0px 15px;
+	}
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 25px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.cover img {
+		height: 80%;
+		width: 310px;
+	}
+	.cover{
+		margin-top: 20px;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
+
+@media (max-width: 428px) {
+.text-intro h1{
+	font-size: 14px !important;
+}
+}
